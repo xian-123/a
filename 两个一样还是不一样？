@@ -1,0 +1,59 @@
+from...import
+
+如 from A import b,相当于
+
+import A
+
+b=A.b
+
+再如：
+
+"from t2 import var1" 相当于:
+import t2
+var1= t2.var1
+在此过程中有一个隐含的赋值的过程
+import......as
+
+import A as B,给予A库一个B的别称，帮助记忆
+
+
+清溪算法老号
+
+分割线————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+分割线————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+
+
+在python中import或者from…import是用来导入相应的模块。
+
+举个例子：
+
+import datetime
+
+print(datetime.datetime.now())
+
+以上代码实现输出系统当前时间，是引入整个datetime包，然后再调用datetime这个类中的now()方法。
+
+以上代码实现功能也可以用以下代码实现：
+
+from datetime import datetime
+
+print(datetime.now())
+
+这里是从datetime包中只导入datetime这个类，让后再调用datetime这个类中的now()方法实现同样的目的。
+
+假如你嫌datetime这个包名称太长，想要给它取个别名，以后每次用到它的时候都用它的别名代替它，这时就需要用到import…as，例子如下：
+
+import datetime as dt
+
+print(dt.datetime.now())
+
+以上代码完成呢个与之前同样的功能，输出系统当前时间。
+
+---------------------
+
+作者：随心1993
+
+作者：msqt
+链接：https://www.jianshu.com/p/146a06749363
+来源：简书
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
